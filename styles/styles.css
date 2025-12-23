@@ -1,0 +1,155 @@
+/* Formatting Headers & Paragraphs */
+
+h1 {
+  text-align: center;
+  color: blueviolet;
+  font-size: xx-large;
+  font: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding: 0 5%;
+  color: orange;
+  font-size: x-large;
+  font: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  text-align: center;
+  padding: 0 5%;
+  color: blueviolet;
+  font-size: x-large;
+  font: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4 {
+  text-align: center;
+  padding: 0 5%;
+  color: hsl(192, 67%, 49%);
+  font-size: x-large;
+  font: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  padding: 0 5%;
+  color: white;
+
+}
+
+main {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body {
+  margin: 0px;
+  padding-bottom: 5rem;
+}
+
+/*--------------------------------------------------------------*/
+
+/* Navigation Bar - START */
+
+.navbar ul{
+  list-style-type: none;
+  background-color: hsl(0, 0%, 20%);
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.navbar a:hover{
+  background-color: hsl(0, 0%, 10%);
+  color: rgb(2, 214, 2);
+
+}
+
+.navbar li{
+  float: left;
+}
+
+/* Navigation Bar - START */
+/*--------------------------------------------------------------*/
+
+/* Ticker Bar - START */
+
+* { 
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-wrap .ticker {
+  display: inline-block;
+  height: 4rem;
+  line-height: 4rem;
+  white-space: nowrap;
+  padding-right: 100%;
+  box-sizing: content-box;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-name: ticker;
+  animation-name: ticker;
+  -webkit-animation-duration: 30s;
+  animation-duration: 30s;
+}
+.ticker-wrap .ticker__item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 2rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Ticker Bar - END */
+
+
+
